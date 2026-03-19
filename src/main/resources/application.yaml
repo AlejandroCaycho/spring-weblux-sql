@@ -1,0 +1,19 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://ep-empty-morning-ama1dqrw-pooler.c-5.us-east-1.aws.neon.tech:5432/ap1_carlos_caycho?sslmode=require
+    username: neondb_owner
+    password: npg_0tcKULSvIo4W
+
+  datasource:
+    url: jdbc:postgresql://ep-empty-morning-ama1dqrw-pooler.c-5.us-east-1.aws.neon.tech:5432/ap1_carlos_caycho?sslmode=require&channel_binding=require
+    username: neondb_owner
+    password: npg_0tcKULSvIo4W
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
